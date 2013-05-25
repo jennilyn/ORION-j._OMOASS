@@ -1,0 +1,36 @@
+
+
+NAME:
+
+	ORION MOVIE ORDERS AND SALES SYSTEM
+
+DESCRIPTION:
+
+
+		This system is an online video order that allow the customers to choose and order films that they want.
+
+
+FEATURES:
+	
+		*customer
+			->Customers can register themselves.
+			->When the user already made his/her account he/she can login and logout.
+			->View all the films that is available.
+			->View films according to its genre.
+			->Choose films that he/she wants to order.
+			->Search films.
+			
+
+
+		*admin
+			->View all the films that is available.
+			->Add film informations.
+			->Delete film informations.
+			->Update film informations,
+			->View customers total bill.
+			->View the customers total bill.
+			->View the total sales by date.
+			->View payment records.
+			->view delivered and undelivered film orders.
+
+
