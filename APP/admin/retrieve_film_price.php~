@@ -1,0 +1,10 @@
+<?php
+
+	include '../dao/FUNCTIONDAO.php';
+	
+	$id = $_POST['id'];
+	
+	$action=new FUNCTIONDAO();
+	$action->retrieve_film_price($id);
+
+?>

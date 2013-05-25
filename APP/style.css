@@ -1,0 +1,304 @@
+	a:hover{
+	  text-decoration: none;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	#film5{
+	  border: dashed black 2px;
+	}
+
+	body{
+	  background-image: url('image/background2.jpg');
+	  font-family: Courier;
+	  border: 1px dotted black;
+		margin:  2px auto;
+	}
+
+	#img_register{
+	  background-color:silver;
+	  width: 150px;
+		float: left;
+	}
+
+	#div_register_login{
+	  margin: 100px 250px;
+	  border: 1px solid silver;
+	  background-color: silver;
+	  border-radius: 20px; 
+	}
+
+	#div_admin_login{
+	 margin: 100px 250px;
+	 border: 1px solid silver;
+	 
+	 
+	 background-color: silver;
+	 border-radius: 20px; 
+	}
+
+	#p0,#p1,#p2,#p4,#p5,#cust,.a_home,.a_login_as_customer,.a_login_as_admin,.a_logout,.a_home2{
+	  font-size: 25px;
+	  border:1px solid black;
+	  background-color: silver;
+	  padding: 5px;
+	  cursor: pointer;
+	  color: black;
+	  text-decoration: none;
+	}
+
+	#p0:hover,#p1:hover,#p2:hover,#cust:hover {
+	  text-decoration: blink;
+	  color: gray;
+	}
+
+	#a_tab{
+	  margin:10px 400px 50px 350px;
+	  display: inline-block;  
+	}
+
+	.a_tab{
+	  margin: 20px 300px 50px 300px;
+	  display: inline-block;  
+	}
+
+	#index3{ 
+	  padding: 10px;
+	  border-radius: 20px;
+	  position: absolute;
+	}
+
+	#home_content{
+		 margin:10px 400px 50px 350px;
+	}
+
+	#marry{
+		  margin: 100px 250px;
+	}
+
+	#p_username{
+	  text-align: right;
+	  text-decoration: blink;
+	  font-size: 20px;
+	  color: white;
+	}
+
+	#home_index1{
+	  margin: 100px 250px;
+	  border: 1px solid gray; 
+	  border-radius: 20px;
+	}
+
+	#div_body2{
+		margin: 10px 125px;
+		border: 1px solid gray; 
+		border-radius: 20px; 
+		font-family: Courier;
+	}
+
+	#film,#film3{
+			margin-top:10px;
+			margin-bottom: 10px;
+	}
+
+	#a_register{
+	  text-decoration: none;
+	  color: black;
+	  position: absolute;
+	}
+
+	#a_register:hover{
+	  color: #383838   ;
+	  font-size: 20px; 
+	}
+
+	#p_caption{
+	  text-align: right;
+	  text-decoration: overline;
+	  font-size: 30px;
+	}
+
+	tr:hover{
+		background-color: white;
+	}
+
+	th{
+		background-color: LightCyan;
+	}
+
+	#div_film2{
+		display:none;
+	}
+
+	#div_film2{
+		width: 900px;
+		float: center;
+	}
+
+	#reciept{
+		background-color: skyBlue;
+	}
+
+	.header span{
+	  color: white;
+	  text-shadow: 4px 4px 4px black;
+	
+	}
+
+	.header{
+		text-align: center;
+	}
+
+	.header:hover{
+	  color: powderBlue;
+	  text-shadow: 0 -1px #000, 1px 0 #000, 0 1px #000, -1px 0 #000;
+	  font-family: 50px;
+	}
+
+	.genre{
+		border: 1px dotted black;
+		width: 100px;
+		height: 30px;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		font-family: cursive;
+	}
+
+	#btn_horror,#btn_romance,#btn_action,#btn_comedy,#btn_view_all{
+		text-align: center;
+		margin-top: 2px;
+	}
+
+	.div_body{
+		font-family: Courier;
+	}
+
+	button{
+		font-family: cursive;
+	}
+
+	#date{
+		float: right;
+	}
+
+	#film2,#horror_tab,#romance_tab,#comedy_tab,#action_tab{
+		border-radius: 20px;
+		margin: 20px 0px;
+	}
+
+	#p_fullname,#admin_fullname{
+	  /*margin: 50px 300px 0px 600px;*/	
+	  margin-top: 50px;
+	  margin-left: 800px;
+	  margin-right: 150px;
+	}
+
+	#p_caption{
+		display:none;
+	}
+
+	#header{
+		margin: 50px 650px 0px 100px;
+	}
+
+	.wrap{
+		margin: 20px 150px;
+		border: 5px solid LightBlue;
+		background-color: LightCyan;
+		height:auto;
+	}
+
+	#div_form_register{
+		display: none;
+	}
+
+	#d3{
+		 margin: 100px 175px;
+	}
+
+	#user_total_payment,#sales_by_date,#total_table,#payment{
+		margin: 10px 150px;
+	}
+	table tr td{
+		border-radius: 7px; 
+	}
+
+	.outOfStock{
+		text-decoration: none;
+	}
+
+	#stock{
+		width: 100px;
+		height: 30px;
+	}
+
+	#choose_add{
+		font-family: cursive;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	.x{
+		text-align: right;
+	}
+
+	#warning1,#marry{
+		display: none;
+	}
+
+	#marry{
+		  height: 500px;
+		  width: 700px;
+		background-color: gold;
+	}
+
+	#user_total_payment,#sales_by_date,#total_table{
+		margin: 50px 20px;
+	}
+
+	,#payment_table,#payment_info{
+		margin: 50px 5px;
+		padding: 20px;
+	}
+
+	table{
+		font-family: Lucida Console;
+	}
+
+	#div_genre{
+		margin: 10px 220px;
+	}
+
+	#list_of_films{
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	.table_header p{
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#delete_warning,#warning_ubos{
+		display: none;
+		height: 500px;
+		width: 800px;
+		background-color: gold;
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+
+	/*#warning_ubos{
+		display: none;
+		background-color: gold;
+	}*/
+
+	#warning_h3{
+		text-align: center;
+	}
+

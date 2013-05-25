@@ -1,0 +1,234 @@
+a:hover{
+  text-decoration: blink;
+  color: white;
+}
+#film5{
+  border: dashed black 2px;
+}
+body{
+  background-image: url('../images/background2.jpg');
+  font-family: Courier;
+  border: 1px dotted black;
+	margin:  2px auto;
+}
+#img_register{
+  background-color:silver;
+  width: 150px;
+	float: left;
+}
+#div_register_login{
+  /*margin: 150px 500px;*/
+  margin: 100px 250px;
+  border: 1px solid silver;
+  background-color: silver;
+  border-radius: 20px; 
+}
+#div_admin_login{
+ /*margin: 200px 450px;*/
+ margin: 100px 250px;
+ border: 1px solid silver;
+ background-color: silver;
+ border-radius: 20px; 
+}
+#p0,#p1,#p2,#p4,#cust,.a_home,.a_login_as_customer,.a_login_as_admin,.a_logout,.a_home2{
+  font-size: 25px;
+  border:1px solid black;
+  background-color: silver;
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+#p0:hover,#p1:hover,#p2:hover,#cust:hover {
+  text-decoration: blink;
+  color: gray;
+}
+#a_tab{
+  margin:10px 300px 50px 300px;
+  display: inline-block;  
+}
+.a_tab{
+  margin: 20px 300px 50px 300px;
+  display: inline-block;  
+}
+#index3{ 
+  padding: 10px;
+  /*background-color: gray;*/
+  border-radius: 20px;
+  position: absolute;
+}
+#div_register_login{
+
+}
+#index1,#div_admin_login{
+  
+}
+#home_content,#marry,#film3/*,#customer_info*/{
+  margin: 100px 250px;
+}
+/*.a_tab2{
+   margin:150px 250px 100px 300px;
+  display: inline-block; 
+}*/
+#p_username{
+  text-align: right;
+  text-decoration: blink;
+  font-size: 20px;
+  color: white;
+}
+#home_index1/*,#div_body2*/{
+  /*margin: 150px 500px;*/
+  margin: 100px 250px;
+  border: 1px solid gray; 
+  border-radius: 20px;
+}
+#div_body2{
+	/*margin: 150px 425px;*/
+	margin: 10px 150px;
+	border: 1px solid gray; 
+	border-radius: 20px; 
+	font-family: Courier;
+}
+#film{
+margin: 10px 100px;
+
+  /*background-color: gray;*/ 
+}
+#a_register{
+  text-decoration: none;
+  color: black;
+  position: absolute;
+}
+#a_register:hover{
+  color: #383838   ;
+  font-size: 20px; 
+}
+
+#p_caption{
+  text-align: right;
+  text-decoration: overline;
+  font-size: 30px;
+}
+tr:hover{
+	background-color: white;
+}
+#div_film2{
+	display:none;
+}
+#reciept{
+	/*display: none;*/
+	background-color: skyBlue;
+}
+.header span{
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+.header:hover{
+  color: powderBlue;
+
+text-shadow: 0 -1px #000, 1px 0 #000, 0 1px #000, -1px 0 #000;
+  font-family: 50px;
+}
+.genre{
+	border: 1px dotted black;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	font-family: cursive;
+}
+.div_body{
+	/*border: 1px dotted black;
+	margin:  2px auto;*/
+	font-family: Courier;
+}
+button{
+	font-family: cursive;
+}
+#date{
+	float: right;
+}
+#film2,#horror_tab,#romance_tab,#comedy_tab,#action_tab{
+	border-radius: 20px;
+	/*margin: 2px 125px;*/
+	margin: 50px 150px;
+}
+#p_fullname,#admin_fullname{
+ /* float: right;
+  text-decoration: blink;*/
+  margin: 50px 300px 0px 600px;
+}
+#p_caption{
+	display:none;
+}
+#header{
+	margin: 50px 650px 0px 100px;
+}
+.wrap{
+	margin: 20px 250px;
+	border: 5px solid LightBlue;
+	background-color: LightCyan;
+}
+#div_form_register{
+	display: none;
+}
+#d3{
+	 margin: 100px 250px;
+}
+#user_total_payment,#sales_by_date,#total_table,#payment{
+	/*display: none;*/
+	margin: 10px 150px;
+}
+table tr td{
+	border-radius: 7px; 
+}
+.outOfStock{
+	text-decoration: none;
+}
+#stock{
+	width: 100px;
+	height: 30px;
+}
+#choose_add{
+	font-family: cursive;
+}
+h2{
+	text-align: center;
+}
+/*
+sure na meron sa index3
+
+#p_fullname,#admin_fullname{
+ /* float: right;
+  text-decoration: blink;*/
+  /*margin: 50px 300px 0px 600px;
+  
+  #a_tab{
+  margin:10px 300px 50px 300px;
+  display: inline-block;  
+  }
+  #choose_add{
+	font-family: cursive;
+}
+
+#home_content,#marry,#film3/*,#customer_info{
+  margin: 100px 250px;
+}
+
+#d3{
+	 margin: 100px 250px;
+}
+
+
+#user_total_payment,#sales_by_date,#total_table,#payment{
+	/*display: none;
+	margin: 10px 150px;
+}
+
+
+}*/
+/*separated css*/
+.x{
+	text-align: right;
+}

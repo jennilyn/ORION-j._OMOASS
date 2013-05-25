@@ -1,0 +1,50 @@
+
+
+<?php
+	session_start();
+	include '../dao/FUNCTIONDAO.php';
+	$action = new FUNCTIONDAO();
+	if(isset($_REQUEST['admin_username']) && isset($_REQUEST['admin_password'])){	
+		$verrify = $action->checkAdmin($_REQUEST['admin_username'],$_REQUEST['admin_password']);	
+		if($verrify){
+			$_SESSION['admin_username'] = $_REQUEST['admin_password'];
+			header('Location: index3.php');	
+		}else{
+			$errMsg = "UserName add Password Didn't Match";
+		}
+	}
+?>
+
+<html>
+  <head>
+    <title>login as admin</title>
+    <link rel="stylesheet" href="../style.css"/>
+	<link rel="stylesheet" href="../gh/bootstrapCSS/bootstrap.css"/>
+		<link rel="stylesheet" href="../gh/bootstrapCSS/bootstrap-responsive.min.css"/>
+			    <link rel="shortcut icon" href="../images/header.png">
+	<script src="js/index2.js"></script>
+  </head>
+  <body>
+    <div id="div_body">
+    <div class="wrap">
+      <!--<div class="a_tab2"><a href="index1.php" class="a_home">Home</a><a href="register.php" class="a_login_as_customer">Customer</a><a href="login_as_admin.php" class="a_login_as_admin">Admin</a></div><!a_tab2>-->
+      <div id="div_admin_login">
+           <a href="admin_index1.php"><button  class="close">&times;</button></a>
+        <form>
+        	<p class="text-center"><div class="header">LOGIN FORM</div></p>
+          admin's username:<input type="password" name="admin_username" id="admin_username" required></br>
+          admin's password:<input type="text" name="admin_password" id="admin_password" required></br>
+          <button id="btn_login_as_admin">login</button>
+        </form>
+      </div><!div_admin_login>
+      
+    
+    </div><!--end of div_body-->
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/homepage.js"></script>
+	<script src="../js/index2.js"></script>
+	<script src="../gh/bootstrapJS/bootstrap.js"></script>
+		<script src="../gh/bootstrapJS/bootstrap.min.js"></script>
+		</div><!--wrap-->
+  </body>
+</html>

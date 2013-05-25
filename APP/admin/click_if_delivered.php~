@@ -1,0 +1,12 @@
+<?php
+
+	include '../dao/FUNCTIONDAO.php';
+	
+	$id = $_POST['id'];
+	$cash = $_POST['cash'];
+	$total_payment = $_POST['total_payment'];
+	$date_pay = $_POST['date_pay'];
+	
+	$action = new FUNCTIONDAO();
+	$action->click_if_delivered($id,$cash,$total_payment,$date_pay);
+?>
