@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 24, 2013 at 10:31 AM
+-- Generation Time: May 26, 2013 at 10:21 AM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -50,25 +50,23 @@ INSERT INTO `admin_info` (`admin_info_id`, `admin_username`, `admin_password`, `
 CREATE TABLE IF NOT EXISTS `film` (
   `film_id` int(11) NOT NULL AUTO_INCREMENT,
   `film_title` varchar(50) DEFAULT NULL,
+  `thriller` varchar(10000) DEFAULT NULL,
   `film_price` int(3) DEFAULT NULL,
   `genre` varchar(50) DEFAULT NULL,
   `stock` int(11) DEFAULT NULL,
   `date_added` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`film_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=127 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=147 ;
 
 --
 -- Dumping data for table `film`
 --
 
-INSERT INTO `film` (`film_id`, `film_title`, `film_price`, `genre`, `stock`, `date_added`) VALUES
-(120, 'ASWANG 2', 40, 'HORROR', 2, 'May/24/2013 08:33:33'),
-(121, 'a', 20, 'HORROR', 8, 'May/24/2013 08:34:16'),
-(122, 'b', 30, 'HORROR', 7, 'May/24/2013 08:34:34'),
-(123, 'love forgive', 40, 'ROMANCE', 18, 'May/24/2013 08:34:49'),
-(124, 'ayeah', 20, 'ROMANCE', 1, 'May/24/2013 08:35:12'),
-(125, 'qwerty', 15, 'COMEDY', 2, 'May/24/2013 08:35:36'),
-(126, 'yuyuyu', 13, 'ACTION', 0, 'May/24/2013 08:36:09');
+INSERT INTO `film` (`film_id`, `film_title`, `thriller`, `film_price`, `genre`, `stock`, `date_added`) VALUES
+(143, 'mr. bean the movie(series)', 'ffgffgfgfgfgfgfgfgfgfgfgfgfg', 30, 'COMEDY', 0, 'May/26/2013 11:11:38'),
+(144, 'the grude', 'fsfdfdfdfdfdfdffdfdfdfdfdf', 50, 'HORROR', 0, 'May/26/2013 11:12:33'),
+(145, 'carrie', 'hhahahahahahahahahah', 45, 'ACTION', 0, 'May/26/2013 11:12:50'),
+(146, 'the castle ||', 'nananannananannanaanna', 20, 'ROMANCE', 6, 'May/26/2013 11:13:33');
 
 -- --------------------------------------------------------
 
@@ -82,22 +80,21 @@ CREATE TABLE IF NOT EXISTS `payments` (
   `total_payment` int(11) DEFAULT NULL,
   `money_change` int(11) DEFAULT NULL,
   PRIMARY KEY (`payment_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=121 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `payments`
 --
 
 INSERT INTO `payments` (`payment_id`, `cash`, `total_payment`, `money_change`) VALUES
-(112, 100, 90, 10),
-(113, 100, 33, 67),
-(114, 200, 88, 112),
-(115, 100, 40, 60),
-(116, 100, 40, 60),
-(117, 50, 40, 10),
-(118, 50, 40, 10),
-(119, 100, 70, 30),
-(120, 100, 75, 25);
+(17, 100, 75, 25),
+(18, 100, 65, 35),
+(19, 100, 65, 35),
+(20, 100, 50, 50),
+(21, 100, 50, 50),
+(22, 500, 50, 450),
+(23, 50, 20, 30),
+(24, 30, 20, 10);
 
 -- --------------------------------------------------------
 
@@ -112,18 +109,20 @@ CREATE TABLE IF NOT EXISTS `user` (
   `address` varchar(50) DEFAULT NULL,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
+  `date_register` varchar(50) DEFAULT NULL,
   `status` varchar(5) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=139 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=170 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `address`, `username`, `password`, `status`) VALUES
-(136, 'Jennilyn', 'Orion', 'Katipunan Abuyog,Leyte', 'jennilyn', 'orion', 'OFF'),
-(137, 'Marejean', 'Perpinosa', 'Balinsasayao Abuyog,Leyte', 'jean', 'mark', 'OFF'),
-(138, 'h', 'h', 'h Abuyog,Leyte', 'h', 'h', 'ON');
+INSERT INTO `user` (`user_id`, `firstname`, `lastname`, `address`, `username`, `password`, `date_register`, `status`) VALUES
+(166, 'Jennilyn', 'Orion', 'Katipunan Abuyog,Leyte', 'abcdefghijklmnopqrstuvwxyz', 'abcdefghijklmnopqrstuvwxyz', 'May/26/2013', 'OFF'),
+(167, 'Marejean', 'Perpinosa', 'Balinsasayao Abuyog,Leyte', 'mj', 'mj', 'May/26/2013', 'OFF'),
+(168, 'Maria', 'Magdalena', 'Ambot Abuyog,Leyte', 'ma', 'ma', 'May/26/2013', 'OFF'),
+(169, 'k', 'k', 'k Abuyog,Leyte', 'k', 'k', 'May/26/2013', 'ON');
 
 -- --------------------------------------------------------
 
@@ -140,24 +139,27 @@ CREATE TABLE IF NOT EXISTS `user_to_film` (
   PRIMARY KEY (`id`),
   KEY `link_to_film` (`film_id`),
   KEY `link_to_user` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=275 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=66 ;
 
 --
 -- Dumping data for table `user_to_film`
 --
 
 INSERT INTO `user_to_film` (`id`, `film_id`, `user_id`, `date_buy`, `status`) VALUES
-(264, 120, 136, 'May/24/2013', 'TAPOS NA PAGDILIVER'),
-(265, 122, 136, 'May/24/2013', 'TAPOS NA PAGDILIVER'),
-(266, 125, 137, 'May/24/2013', 'TAPOS NA PAGDILIVER'),
-(267, 124, 137, 'May/24/2013', 'TAPOS NA PAGDILIVER'),
-(268, 120, 137, 'May/24/2013', 'TAPOS NA PAGDILIVER'),
-(269, 120, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER'),
-(270, 121, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER'),
-(271, 123, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER'),
-(272, 122, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER'),
-(273, 125, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER'),
-(274, 124, 138, 'May/24/2013', 'HINDI PA NA DIDELIVER');
+(52, 143, 166, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(53, 145, 166, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(54, 145, 166, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(55, 146, 166, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(56, 146, 167, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(57, 145, 167, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(58, 146, 168, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(59, 143, 168, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(60, 143, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(61, 146, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(62, 143, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(63, 146, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(64, 146, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER'),
+(65, 146, 169, 'May/26/2013', 'TAPOS NA PAGDILIVER');
 
 -- --------------------------------------------------------
 
@@ -173,15 +175,21 @@ CREATE TABLE IF NOT EXISTS `user_to_payments` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `payment_id` (`payment_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `user_to_payments`
 --
 
 INSERT INTO `user_to_payments` (`id`, `user_id`, `payment_id`, `date_pay`) VALUES
-(58, 136, 119, 'May/24/2013'),
-(59, 137, 120, 'May/24/2013');
+(17, 166, 17, 'May/26/2013'),
+(18, 166, 18, 'May/26/2013'),
+(19, 167, 19, 'May/26/2013'),
+(20, 168, 20, 'May/26/2013'),
+(21, 169, 21, 'May/26/2013'),
+(22, 169, 22, 'May/26/2013'),
+(23, 169, 23, 'May/26/2013'),
+(24, 169, 24, 'May/26/2013');
 
 --
 -- Constraints for dumped tables
